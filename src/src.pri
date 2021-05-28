@@ -1,5 +1,5 @@
 QJSON_BASE = ..
-QJSON_SRCBASE = .
+QJSON_SRCBASE = $$PWD/
 
 TEMPLATE = lib
 QT      -= gui
@@ -19,32 +19,32 @@ QJSON_CPP = $$QJSON_SRCBASE
 INCLUDEPATH += $$QJSON_CPP
 
 PRIVATE_HEADERS += \
-  json_parser.hh \
-  json_scanner.h \
-  location.hh \
-  parser_p.h  \
-  position.hh \
-  qjson_debug.h  \
-  stack.hh
+  $$PWD/json_parser.hh \
+  $$PWD/json_scanner.h \
+  $$PWD/location.hh \
+  $$PWD/parser_p.h  \
+  $$PWD/position.hh \
+  $$PWD/qjson_debug.h  \
+  $$PWD/stack.hh
 
 PUBLIC_HEADERS += \
-  parser.h \
-  parserrunnable.h \
-  qobjecthelper.h \
-  serializer.h \
-  serializerrunnable.h \
-  qjson_export.h
+  $$PWD/parser.h \
+  $$PWD/parserrunnable.h \
+  $$PWD/qobjecthelper.h \
+  $$PWD/serializer.h \
+  $$PWD/serializerrunnable.h \
+  $$PWD/qjson_export.h
 
 HEADERS += $$PRIVATE_HEADERS $$PUBLIC_HEADERS
 
 SOURCES += \
-  json_parser.cc \
-  json_scanner.cpp \
-  parser.cpp \
-  parserrunnable.cpp \
-  qobjecthelper.cpp \
-  serializer.cpp \
-  serializerrunnable.cpp
+  $$PWD/json_parser.cc \
+  $$PWD/json_scanner.cpp \
+  $$PWD/parser.cpp \
+  $$PWD/parserrunnable.cpp \
+  $$PWD/qobjecthelper.cpp \
+  $$PWD/serializer.cpp \
+  $$PWD/serializerrunnable.cpp
 
 symbian: {
   DEFINES += QJSON_MAKEDLL
